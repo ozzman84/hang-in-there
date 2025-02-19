@@ -110,12 +110,14 @@ var currentPoster = createPoster(image, title, quote);
 
 var posterHTML = document.querySelector('.main-poster');
 
-var poster = document.querySelector('.poster-img').src = currentPoster.image
+var posterImage = document.querySelector('.poster-img').src = currentPoster.imageURL
+var posterTitle = document.querySelector('.poster-title').innerHTML = `
+  <h1>${currentPoster.title}</h1>
+`;
+var posterQuote = document.querySelector('.poster-quote').innerHTML = `
+  <h1>${currentPoster.quote}</h1>
+`;
 
-// posterHTML.innerHTML = `
-//   <h1>${currentPoster.title}</h1>
-
-// `;
 // event listeners go here 👇
 
 // functions and event handlers go here 👇
